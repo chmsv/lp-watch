@@ -14,14 +14,14 @@
     <title>Your best watch</title>
   </head>
   <body class="text-gray-700 bg-white font-['Inter']">
-    <nav class="p-6 shadow-lg shadow-neutral-300/50">
+    <nav class="md:p-6 px-2 shadow-lg shadow-neutral-300/50">
       <div
         class="container mx-auto px-6 py-2 flex justify-between items-center"
       >
         <a class="font-bold text-2xl lg:text-4xl" href="#">
           Smart Health Monitoring Watch
         </a>
-        <div class="block lg:hidden">
+        <!-- <div class="mobile-menu-button block lg:hidden">
           <button
             class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-700 hover:border-green-500 appearance-none focus:outline-none"
           >
@@ -35,8 +35,23 @@
             </svg>
           </button>
         </div>
+        <div class="mobile-menu block lg:hidden">
+          <a href="/">Home</a><a href="#features">Features</a><a href="#footer">Footer</a>
+        </div> -->
+        <div class="md:hidden flex items-center">
+          <button class="mobile-menu-button">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+        <div class="mobile-menu hidden md:hidden flex flex-col">
+          <a href="/" class="block py-2 px-4 text-sm hover:bg-gray-200">Home</a>
+          <a href="#features" class="block py-2 px-4 text-sm hover:bg-gray-200">Features</a>
+          <a href="#footer" class="block py-2 px-4 text-sm hover:bg-gray-200">Contact</a>
+        </div>
         <div class="hidden lg:block">
-          <ul class="inline-flex gap-2 text-xl">
+          <ul class="inline-flex gap-2 text-xl" id="nav-ul">
             <li>
               <a class="px-4 hover:font-semibold hover:underline" href="/"
                 >Home</a
@@ -62,13 +77,13 @@
       style="background: linear-gradient(90deg, #00b646 0%, #00ff80 70%)"
     >
       <div class="container mx-auto px-6 text-neutral-100">
-        <h2 class="text-6xl font-bold mb-4">Your Best Watch</h2>
-        <h3 class="text-4xl mt-2 mb-12">
+        <h2 class="text-4xl md:text-6xl font-bold mb-4">Your Best Watch</h2>
+        <h3 class="text-2xl md:text-4xl mt-2 mb-12">
           Monitor your health vitals smartly anywhere you go.
         </h3>
 
         <button
-          class="bg-white font-bold text-gray-700 text-xl rounded-xl py-4 px-8 shadow-lg uppercase tracking-wider hover:text-green-600"
+          class="bg-white font-bold text-gray-700 md:text-xl rounded-xl py-4 px-8 shadow-lg uppercase tracking-wider hover:text-green-600"
         >
           Pre Order Now
         </button>
@@ -175,14 +190,14 @@
           Get yourself the Smart Health Monitoring Watch!
         </h3>
         <button
-          class="bg-white font-bold text-gray-700 text-xl rounded-xl py-4 px-8 shadow-lg uppercase tracking-wider hover:text-green-600"
+          class="bg-white font-bold text-gray-700 md:text-xl rounded-xl py-4 px-8 shadow-lg uppercase tracking-wider hover:text-green-600"
         >
           Pre Order Now
         </button>
       </div>
     </section>
     <footer class="bg-gray-100" id="footer">
-      <div class="container mx-auto px-6 pt-10 pb-6">
+      <div class="container mx-auto px-6 pt-10 pb-6 text-xs md:text-base">
         <div class="flex flex-row md:flex-wrap">
           <div class="w-full md:w-1/4 text-center">
             <h5 class="uppercase mb-6 font-bold">Links</h5>
@@ -190,21 +205,21 @@
               <li class="mt-2">
                 <a
                   href="#"
-                  class="hover:underline text-gray-600 hover:text-orange-500"
+                  class="hover:underline text-gray-600 hover:text-green-500"
                   >FAQ</a
                 >
               </li>
               <li class="mt-2">
                 <a
                   href="#"
-                  class="hover:underline text-gray-600 hover:text-orange-500"
+                  class="hover:underline text-gray-600 hover:text-green-500"
                   >Help</a
                 >
               </li>
               <li class="mt-2">
                 <a
                   href="#"
-                  class="hover:underline text-gray-600 hover:text-orange-500"
+                  class="hover:underline text-gray-600 hover:text-green-500"
                   >Support</a
                 >
               </li>
@@ -216,14 +231,14 @@
               <li class="mt-2">
                 <a
                   href="#"
-                  class="hover:underline text-gray-600 hover:text-orange-500"
+                  class="hover:underline text-gray-600 hover:text-green-500"
                   >Terms</a
                 >
               </li>
               <li class="mt-2">
                 <a
                   href="#"
-                  class="hover:underline text-gray-600 hover:text-orange-500"
+                  class="hover:underline text-gray-600 hover:text-green-500"
                   >Privacy</a
                 >
               </li>
@@ -235,21 +250,21 @@
               <li class="mt-2">
                 <a
                   href="#"
-                  class="hover:underline text-gray-600 hover:text-orange-500"
+                  class="hover:underline text-gray-600 hover:text-green-500"
                   >Facebook</a
                 >
               </li>
               <li class="mt-2">
                 <a
                   href="#"
-                  class="hover:underline text-gray-600 hover:text-orange-500"
+                  class="hover:underline text-gray-600 hover:text-green-500"
                   >Linkedin</a
                 >
               </li>
               <li class="mt-2">
                 <a
                   href="#"
-                  class="hover:underline text-gray-600 hover:text-orange-500"
+                  class="hover:underline text-gray-600 hover:text-green-500"
                   >Twitter</a
                 >
               </li>
@@ -261,21 +276,21 @@
               <li class="mt-2">
                 <a
                   href="#"
-                  class="hover:underline text-gray-600 hover:text-orange-500"
+                  class="hover:underline text-gray-600 hover:text-green-500"
                   >Official Blog</a
                 >
               </li>
               <li class="mt-2">
                 <a
                   href="#"
-                  class="hover:underline text-gray-600 hover:text-orange-500"
+                  class="hover:underline text-gray-600 hover:text-green-500"
                   >About Us</a
                 >
               </li>
               <li class="mt-2">
                 <a
                   href="#"
-                  class="hover:underline text-gray-600 hover:text-orange-500"
+                  class="hover:underline text-gray-600 hover:text-green-500"
                   >Contact</a
                 >
               </li>
@@ -284,5 +299,6 @@
         </div>
       </div>
     </footer>
+  <script src="./script.js"></script>
   </body>
 </html>
